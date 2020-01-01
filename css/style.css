@@ -1454,7 +1454,7 @@ main {
 
 
 footer{
-  position: relative;
+  position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -1470,8 +1470,18 @@ footer li{
   list-style: none;
 }
 
-@media screen and (max-width: 425px) {
-  footer > div{
-    font-size: 10px;
-  }
+@media screen and (max-width: 426px) {
+footer{
+  position: relative;
+}
+
+.home-button{
+  top: 0;
+}
+h1{
+  font-size: 1.5rem;
+}
+footer > div{
+  font-size: 12px;
+}
 }
